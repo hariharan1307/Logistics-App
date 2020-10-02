@@ -1,0 +1,4 @@
+trigger AsignDriver on Quotation__c (after insert) 
+{
+    AsignDriverClass.TriggerMethod(Trigger.New);
+}
