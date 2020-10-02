@@ -1,0 +1,4 @@
+trigger OrderCreation on Customer__c (after insert) 
+{
+    OrderCreationClass.TriggerMethod(Trigger.new);
+}
