@@ -1,0 +1,5 @@
+trigger QuotationCreationTrigger on Customer_Order__c (after insert) 
+{
+    QuotationCreationClass.TriggerMethod(Trigger.New);
+    
+}
